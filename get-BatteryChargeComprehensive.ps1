@@ -16,17 +16,17 @@ function Get-BatteryCharge {
         - "Object": Returns the raw battery objects
     
     .EXAMPLE
-        Get-BatteryCharge
+        Get-BatteryChargeComprehensive
         
         Returns detailed battery information in a formatted table.
     
     .EXAMPLE
-        Get-BatteryCharge -Format Simple
+        Get-BatteryChargeComprehensive -Format Simple
         
         Returns only the battery charge percentage.
     
     .EXAMPLE
-        Get-BatteryCharge -Format Object
+        Get-BatteryChargeComprehensive -Format Object
         
         Returns the raw battery objects for further processing.
     #>
