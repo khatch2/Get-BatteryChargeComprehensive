@@ -121,5 +121,5 @@ function Get-BatteryCharge {
 
 # Execute the function with default parameters when the script is run directly
 if ($MyInvocation.InvocationName -eq $MyInvocation.MyCommand.Name) {
-    Get-BatteryCharge
+    Get-BatteryChargeComprehensive
 }
