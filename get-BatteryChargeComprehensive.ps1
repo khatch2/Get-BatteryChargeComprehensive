@@ -1,6 +1,6 @@
 #!/usr/bin/env pwsh
 
-function Get-BatteryCharge {
+function Get-BatteryChargeComprehensive {
     <#
     .SYNOPSIS
         Gets the current battery charge percentage and status information.
