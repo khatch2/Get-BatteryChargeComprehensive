@@ -46,7 +46,7 @@ function Get-BatteryChargeComprehensive {
     
     try {
         # Get battery information using WMI
-        $batteries = Get-WmiObject -Class Win32_Battery -ErrorAction Stop
+        $batteries = Get-CimInstance -Class Win32_Battery -ErrorAction Stop
         
         if ($null -eq $batteries -or @($batteries).Count -eq 0) {
             Write-Warning "No battery detected. This might be a desktop computer or the battery information is unavailable."
