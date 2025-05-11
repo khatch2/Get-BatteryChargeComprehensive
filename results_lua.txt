@@ -1,0 +1,12 @@
+Hejsan, Lua!
+Hejsan, Lua Programmer!
+Looping from 1 to 5:
+1
+2
+3
+4
+5
+Fruits: 
+1	apple
+2	banana
+3	cherry
