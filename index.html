@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Första HTML-sida</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Välkommen till min första HTML-sida!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#features">Funktioner</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>Detta är ett exempel på en enkel HTML-sida skapad för att demonstrera grundläggande HTML-struktur.</p>
-        <ul>
-            <li>HTML är ett märkspråk.</li>
-            <li>Det används för att skapa webbsidor.</li>
-            <li>Det är lätt att lära sig!</li>
-        </ul>
+        <section id="about">
+            <h2>Om denna sida</h2>
+            <p>Detta är ett exempel på en enkel HTML-sida skapad för att demonstrera grundläggande HTML-struktur.</p>
+        </section>
+        <section id="features">
+            <h2>Funktioner</h2>
+            <ul>
+                <li>HTML är ett märkspråk.</li>
+                <li>Det används för att skapa webbsidor.</li>
+                <li>Det är lätt att lära sig!</li>
+            </ul>
+        </section>
     </main>
     <footer>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Har du frågor? Kontakta oss på <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </section>
         <p>&copy; 2025 Mitt Namn</p>
     </footer>
 </body>
