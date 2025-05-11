@@ -26,23 +26,25 @@ void main() {
     'isEmployed': true,
   };
   print('\nPerson details:');
-  person.forEach(action: (key, value) {
+  person.forEach((key, value) {
     print('$key: $value');
   });
   // Calling a function
   print('\n${calculateArea(5.0)}');
   // Using a class
-  var circle = Circle(3.0);
+  var circle = Circle(radius: 3.0);
   print('Circle with radius ${circle.radius} has area: ${circle.area()}');
   // Async function
   print('\nStarting countdown...');
   countDown(3);
 }
+
 // Function with return type
 String calculateArea(double radius) {
   double area = math.pi * radius * radius;
   return 'A circle with radius $radius has an area of ${area.toStringAsFixed(2)}';
 }
+
 // Class definition
 class Circle {
   final double radius;
@@ -50,12 +52,13 @@ class Circle {
   Circle({required this.radius});
   // Method
   double area() {
-    return math.pi * radius * radius
+    return math.pi * radius * radius;
   }
 }
+
 // Async function
 void countDown(int seconds) {
-  for (int i = seconds; i>0; i--) {
+  for (int i = seconds; i > 0; i--) {
     print('$i...');
     sleep(Duration(seconds: 1)); // Not recomended in real apps, just for demo
   }
