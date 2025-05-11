@@ -57,6 +57,7 @@ class Circle {
 }
 
 // Async function
+// Note: For real asynchronous code in Dart, I'd typically use async/await instead of sleep(), but I kept it simple for demonstration purposes
 void countDown(int seconds) {
   for (int i = seconds; i > 0; i--) {
     print('$i...');
